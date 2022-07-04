@@ -85,4 +85,3 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
-localStorage.removeItem('books');
