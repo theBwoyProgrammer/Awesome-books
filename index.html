@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=#, initial-scale=1.0">
-    <title>Awesome Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Awesome Book Store</title>
 </head>
 <body>
-    <main>
-        <div class="wrapper">
-            <h1 class="title">Awesome Books</h1>
-            <form id="add-book">
-                <div class="title-input">
-                <input type="text" id="title" name="title" placeholder="Title">
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+          <i class="fas fa-book-open text-primary"></i> My Awesome Books List</h1>
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+          <form id="book-form">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" id="title" class="form-control">
             </div>
-            <div class="author-input">
-                <input type="text" id="author" name="author" placeholder="author">
+            <div class="form-group">
+              <label for="author">Author</label>
+              <input type="text" id="author" class="form-control">
             </div>
+            <div class="form-group">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+          </form> 
+      </div>
+    <script src="index.js"></script>
             <div class="add-input">
                 <button type="button" id="add" value="Add Book">Add</button>
             </div>
