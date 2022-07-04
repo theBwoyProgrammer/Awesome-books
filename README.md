@@ -21,7 +21,7 @@
 
 - GitHub: [@HatimDev-HE](https://github.com/HatimDev-HE)
 - Twitter: [@HatimDev](https://twitter.com/HatimDev)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn]( www.linkedin.com/in/hatimdev)
 
 👤 **Author2**
 
