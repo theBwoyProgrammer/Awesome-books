@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Awesome Books</h1>
-          <table class="table">
-            <tbody id="book-list"></tbody>
-          </table>
-          <form id="book-form">
-            <div class="form-group">
-              <input type="text" id="title" class="form-control" placeholder="Title" onfocus="this.value=''"></div>
-            <div class="form-group">
-              <input type="text" id="author" class="form-control" placeholder="Author" onfocus="this.value=''">
-            </div>
-            <div class="form-group">
-            </div>
-            <input type="submit" value="Add" class="btn">
-          </form> 
-      </div>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Awesome Books</h1>
+    <div id="displayField"></div>
+
+    <form id="form" class="form">
+      <input type="text" placeholder="Title" class="titleName" id="titleName" />
+      <br />
+      <br />
+      <input
+        type="text"
+        placeholder="Author"
+        class="authorName"
+        id="authorName"
+      />
+      <br />
+      <br />
+      <button class="btn" type="submit">Add</button>
+    </form>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
