@@ -1,20 +1,20 @@
-body{
-  background-color:rgba(49, 48, 48, 0.0);
+body {
+  background-color: rgba(49, 48, 48, 0);
 }
-.allBooks{
-  display:flex;
+
+.allBooks {
+  display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.tables{
+.tables {
   border: 3px solid black;
 }
 
 table tr:nth-child(odd) {
   background-color: rgba(49, 48, 48, 0.247);
 }
-
 
 td {
   text-align: center;
@@ -25,13 +25,14 @@ td {
   padding-left: 10rem;
 }
 
-hr{
-  width:20%;
-  border:2px solid black;
+hr {
+  width: 20%;
+  border: 2px solid black;
 }
 
-.addNew , .allBooks {
-  display:flex;
+.addNew,
+.allBooks {
+  display: flex;
   align-items: center;
   flex-direction: column;
 }
@@ -43,17 +44,17 @@ input[type='text'] {
 }
 
 .button {
-  background-color:white;
+  background-color: white;
   border: 2px solid black;
-  color:black;
+  color: black;
   padding: 10px;
   text-align: center;
   text-decoration: none;
-  box-shadow: 2px 2px black, 0.1em 0 .1em black;
+  box-shadow: 2px 2px black, 0.1em 0 0.1em black;
 }
 
-#btn{
-  display:flex;
+#btn {
+  display: flex;
   justify-content: flex-end;
-  margin-top:1rem;
+  margin-top: 1rem;
 }

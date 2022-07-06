@@ -6,7 +6,6 @@ class Books {
     this.author = author;
   }
 
-
   static reset() {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
