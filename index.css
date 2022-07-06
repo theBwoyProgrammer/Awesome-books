@@ -58,3 +58,14 @@ input[type='text'] {
   justify-content: flex-end;
   margin-top: 1rem;
 }
+
+.contact{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer{
+  border: 2px solid black;
+  padding: 10px;
+}
