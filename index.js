@@ -39,7 +39,7 @@ class Books {
       data.forEach((book) => {
         str += `<table class="list-item">
           <tr><td>"${book.title}"</td><td>by</td><td>${book.author}</td>
-         <td><a href="" class="remove-button" id="delete"><button type="button" class="button">Remove</button></a></td></tr>
+         <td class='td-btn'><a href="" class="remove-button" id="delete"><button type="button" class="button">Remove</button></a></td></tr>
         </table>`;
       });
     }

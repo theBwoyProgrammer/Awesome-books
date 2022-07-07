@@ -10,6 +10,7 @@ body {
 
 .tables {
   border: 3px solid black;
+  width: 90%;
 }
 
 table tr:nth-child(odd) {
@@ -19,18 +20,24 @@ table tr:nth-child(odd) {
 td {
   text-align: center;
   padding: 1rem;
+  /* width: 70%; */
+}
+
+.td-btn {
+  width: 100%;
 }
 
 .remove-button {
-  padding-left: 10rem;
+  padding-left: 46rem;
 }
 
-hr {
-  width: 20%;
-  border: 2px solid black;
+.addNew {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.addNew,
 .allBooks {
   margin-top: 5rem;
   display: flex;
@@ -40,8 +47,8 @@ hr {
 
 input[type='text'] {
   border: 2px solid black;
-  height: 1.5rem;
-  width: 15rem;
+  height: 2rem;
+  width: 25rem;
 }
 
 .button {
@@ -64,19 +71,22 @@ input[type='text'] {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 footer{
   border: 2px solid black;
   padding: 10px;
+  position: absolute;
+  bottom: 1rem;
+  width: 90%;
 }
 
 .page{
     display: none;
-    width: 100%;
+    min-width: 100%;
     min-height: 100%; /* allow for content off the bottom of the page */
-    position: absolute;  /* or absolute if the user needs to scroll for more content */
+     position: absolute;  /*or absolute if the user needs to scroll for more content */
 }
 .active{
     display: block; 
@@ -84,21 +94,28 @@ footer{
 
 .nav{
   border: 2px solid black;
+  width: 90%;
+  right: 4%;
   position: absolute;
   text-decoration: none;
   display: flex;
   list-style: none;
- 
   padding: 1rem;
+  gap: 1rem;
 }
 
 .nav li a{
   text-decoration: none;
   color: black;
+  
 }
 
 .tags{
 border-right: 2px solid black;
-padding-right: 1rem;
-padding-left: 10rem;
+padding-right: 0.5rem;
+
+}
+
+.nav-title {
+  padding-right: 54rem;
 }
