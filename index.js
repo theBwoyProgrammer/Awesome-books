@@ -93,4 +93,11 @@ const app = {
     },
 }
 
+  function startDate() {
+    var d = new Date();
+    var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    document.getElementById("date").innerHTML = months[d.getMonth()]+" "+d.getDay()+" "+d.getFullYear()+", "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+  }
+startDate();
+
 document.addEventListener('DOMContentLoaded', app.init);

@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="index.css">
   <title>Awesome</title>
  </head>
-<body>
+<body onload='startDate()'>
 
         <main>
+          <div id='date'></div>
         <div class="page" id="List">
             <ol class="nav">
               <li class="nav-title">Awesome Books</li>
@@ -17,7 +18,7 @@
                 <li class="tags"><a href="#" data-target="addNew" class="nav-link">Add new</a></li>
                 <li class="tags"><a href="#" data-target="contact" class="nav-link">Contact</a></li>
             </ol>
-
+             
                   <section class="allBooks">
         <div class="title"><h1>All awesome books</h1></div>
         <div class="tables">
@@ -37,7 +38,7 @@
                 <li class="tags"><a href="#" data-target="addNew" class="nav-link">Add new</a></li>
                 <li class="tags"><a href="#" data-target="contact" class="nav-link">Contact</a></li>
             </ol>
-
+            <div id='date'></div>
                   <section class="addNew">
         <div class="title">
           <h1>Add a new book</h1>
@@ -60,6 +61,7 @@
                 <li class="tags"><a href="#" data-target="addNew" class="nav-link">Add new</a></li>
                 <li class="tags"><a href="#" data-target="contact" class="nav-link">Contact</a></li>
             </ol>
+            <div id='date'></div>
                 <section class="contact">
         <h1>Contact Information</h1>
         <p>
@@ -75,7 +77,6 @@
     </section>
     
         </div>
-        
     </main>
   <script src='index.js'></script>
 </body>

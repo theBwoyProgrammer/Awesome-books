@@ -9,6 +9,9 @@ body {
 }
 
 .tables {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border: 3px solid black;
   width: 90%;
 }
@@ -19,8 +22,6 @@ table tr:nth-child(odd) {
 
 td {
   text-align: center;
-  padding: 1rem;
-  /* width: 70%; */
 }
 
 .td-btn {
@@ -28,34 +29,43 @@ td {
 }
 
 .remove-button {
-  padding-left: 46rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: flex-end;
 }
 
 .addNew {
-  margin-top: 10rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 .allBooks {
-  margin-top: 5rem;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 input[type='text'] {
   border: 2px solid black;
-  height: 2rem;
-  width: 25rem;
+  width: 130%;
+  height: 40%;
+  align-items: center;
 }
 
 .button {
   background-color: white;
   border: 2px solid black;
   color: black;
-  padding: 10px;
+  padding: 1%;
   text-align: center;
   text-decoration: none;
   box-shadow: 2px 2px black, 0.1em 0 0.1em black;
@@ -64,29 +74,33 @@ input[type='text'] {
 #btn {
   display: flex;
   justify-content: flex-end;
-  margin-top: 1rem;
+  margin-top: 5%;
+  width: 135%;
+  height: 30%;
 }
 
 .contact{
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin-top: 10rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 footer{
   border: 2px solid black;
-  padding: 10px;
+  padding: 1%;
   position: absolute;
-  bottom: 1rem;
+  bottom: 1%;
   width: 90%;
 }
 
 .page{
     display: none;
-    min-width: 100%;
-    min-height: 100%; /* allow for content off the bottom of the page */
-     position: absolute;  /*or absolute if the user needs to scroll for more content */
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 .active{
     display: block; 
@@ -97,11 +111,10 @@ footer{
   width: 90%;
   right: 4%;
   position: absolute;
-  text-decoration: none;
   display: flex;
   list-style: none;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 1%;
+  gap: 1%;
 }
 
 .nav li a{
@@ -112,10 +125,16 @@ footer{
 
 .tags{
 border-right: 2px solid black;
-padding-right: 0.5rem;
+padding-right: 1%;
 
 }
 
 .nav-title {
-  padding-right: 54rem;
+  padding-right: 65%;
+}
+
+#date{
+  position: absolute;
+  right: 4%;
+  top: 12%;
 }
