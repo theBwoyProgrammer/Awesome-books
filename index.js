@@ -73,31 +73,31 @@ document.querySelectorAll('#delete').forEach((button, id) => {
 });
 
 const app = {
-    pages: [],
-    show: new Event('show'),
-    init: function(){
-        app.pages = document.querySelectorAll('.page');
-        app.pages.forEach((pg)=>{
-            pg.addEventListener('show', app.pageShown);
-        })
-        
-        document.querySelectorAll('.nav-link').forEach((link)=>{
-            link.addEventListener('click', app.nav);
-        })
-    },
-    nav: function(ev){
-        ev.preventDefault();
-        let currentPage = ev.target.getAttribute('data-target');
-        document.querySelector('.active').classList.remove('active');
-        document.getElementById(currentPage).classList.add('active');
-    },
-}
+  pages: [],
+  show: new Event('show'),
+  init() {
+    app.pages = document.querySelectorAll('.page');
+    app.pages.forEach((pg) => {
+      pg.addEventListener('show', app.pageShown);
+    });
 
-  function startDate() {
-    var d = new Date();
-    var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-    document.getElementById("date").innerHTML = months[d.getMonth()]+" "+d.getDay()+" "+d.getFullYear()+", "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
-  }
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', app.nav);
+    });
+  },
+  nav(ev) {
+    ev.preventDefault();
+    const currentPage = ev.target.getAttribute('data-target');
+    document.querySelector('.active').classList.remove('active');
+    document.getElementById(currentPage).classList.add('active');
+  },
+};
+
+function startDate() {
+  const d = new Date();
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  document.getElementById('date').innerHTML = `${months[d.getMonth()]} ${d.getDay()} ${d.getFullYear()}, ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+}
 startDate();
 
 document.addEventListener('DOMContentLoaded', app.init);

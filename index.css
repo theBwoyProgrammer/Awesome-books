@@ -6,6 +6,9 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .tables {
@@ -45,15 +48,6 @@ td {
   justify-content: center;
 }
 
-.allBooks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
 input[type='text'] {
   border: 2px solid black;
   width: 130%;
@@ -79,7 +73,7 @@ input[type='text'] {
   height: 30%;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +82,7 @@ input[type='text'] {
   height: 100%;
 }
 
-footer{
+footer {
   border: 2px solid black;
   padding: 1%;
   position: absolute;
@@ -96,17 +90,18 @@ footer{
   width: 90%;
 }
 
-.page{
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-.active{
-    display: block; 
+.page {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
-.nav{
+.active {
+  display: block;
+}
+
+.nav {
   border: 2px solid black;
   width: 90%;
   right: 4%;
@@ -117,23 +112,21 @@ footer{
   gap: 1%;
 }
 
-.nav li a{
+.nav li a {
   text-decoration: none;
   color: black;
-  
 }
 
-.tags{
-border-right: 2px solid black;
-padding-right: 1%;
-
+.tags {
+  border-right: 2px solid black;
+  padding-right: 1%;
 }
 
 .nav-title {
   padding-right: 65%;
 }
 
-#date{
+#date {
   position: absolute;
   right: 4%;
   top: 12%;
