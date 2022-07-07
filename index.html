@@ -9,7 +9,16 @@
  </head>
 <body>
 
-      <section class="allBooks">
+        <main>
+        <div class="page" id="List">
+            <ol class="nav">
+              <li>Awesome Books</li>
+                <li class="tags"><a href="#" data-target="List" class="nav-link">List</li>
+                <li class="tags"><a href="#" data-target="addNew" class="nav-link">Add new</a></li>
+                <li class="tags"><a href="#" data-target="contact" class="nav-link">Contact</a></li>
+            </ol>
+
+                  <section class="allBooks">
         <div class="title"><h2>All awesome books</h2></div>
         <div class="tables">
           <table>
@@ -18,8 +27,17 @@
         </table>
         </div>
       </section>
-      <br><hr>
-      <section class="addNew">
+        </div>
+        
+        <div class="page active" id="addNew">
+            <ol class="nav">
+              <li>Awesome Books</li>
+                <li class="tags"><a href="#" data-target="List" class="nav-link">List</li>
+                <li class="tags"><a href="#" data-target="addNew" class="nav-link">Add new</a></li>
+                <li class="tags"><a href="#" data-target="contact" class="nav-link">Contact</a></li>
+            </ol>
+
+                  <section class="addNew">
         <div class="title">
           <h2>Add a new book</h2>
         </div>
@@ -30,6 +48,31 @@
             <div id="btn"><button type="submit" class="button">Add</button></div>
           </form>
     </section>
+
+        </div>
+        
+        <div class="page" id="contact">
+            <ol class="nav">
+              <li>Awesome Books</li>
+                <li class="tags"><a href="#" data-target="List" class="nav-link">List</li>
+                <li class="tags"><a href="#" data-target="addNew" class="nav-link">Add new</a></li>
+                <li class="tags"><a href="#" data-target="contact" class="nav-link">Contact</a></li>
+            </ol>
+                <section class="contact">
+        <h1>Contact Information</h1>
+        <p>
+            Do you have any questions or you just want to say "Hello"?<br>
+            You can reach out to us!
+        </p>
+        <ul>
+            <li>Our e-mail: mail@mail.com</li>
+            <li>Our phone number:46746464646</li>
+            <li>Our address:xyz</li>
+        </ul>
+    </section>
+        </div>
+        
+    </main>
   <script src='index.js'></script>
 </body>
 </html>

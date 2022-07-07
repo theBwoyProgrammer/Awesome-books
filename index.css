@@ -32,6 +32,7 @@ hr {
 
 .addNew,
 .allBooks {
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -63,9 +64,41 @@ input[type='text'] {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 5rem;
 }
 
 footer{
   border: 2px solid black;
   padding: 10px;
+}
+
+.page{
+    display: none;
+    width: 100%;
+    min-height: 100%; /* allow for content off the bottom of the page */
+    position: absolute;  /* or absolute if the user needs to scroll for more content */
+}
+.active{
+    display: block; 
+}
+
+.nav{
+  border: 2px solid black;
+  position: absolute;
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+ 
+  padding: 1rem;
+}
+
+.nav li a{
+  text-decoration: none;
+  color: black;
+}
+
+.tags{
+border-right: 2px solid black;
+padding-right: 1rem;
+padding-left: 10rem;
 }
