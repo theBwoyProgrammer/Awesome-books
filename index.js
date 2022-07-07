@@ -39,7 +39,7 @@ class Books {
       data.forEach((book) => {
         str += `<table class="list-item">
           <tr><td>"${book.title}"</td><td>by</td><td>${book.author}</td>
-         <td><a href="" class="remove-button" id="delete"><button type="button" class="button">Remove</button></a></td></tr>
+         <td class='td-btn'><a href="" class="remove-button" id="delete"><button type="button" class="button">Remove</button></a></td></tr>
         </table>`;
       });
     }
@@ -71,3 +71,33 @@ document.querySelectorAll('#delete').forEach((button, id) => {
     Books.retrieve();
   });
 });
+
+const app = {
+  pages: [],
+  show: new Event('show'),
+  init() {
+    app.pages = document.querySelectorAll('.page');
+    app.pages.forEach((pg) => {
+      pg.addEventListener('show', app.pageShown);
+    });
+
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', app.nav);
+    });
+  },
+  nav(ev) {
+    ev.preventDefault();
+    const currentPage = ev.target.getAttribute('data-target');
+    document.querySelector('.active').classList.remove('active');
+    document.getElementById(currentPage).classList.add('active');
+  },
+};
+
+function startDate() {
+  const d = new Date();
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  document.getElementById('date').innerHTML = `${months[d.getMonth()]} ${d.getDay()} ${d.getFullYear()}, ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+}
+startDate();
+
+document.addEventListener('DOMContentLoaded', app.init);

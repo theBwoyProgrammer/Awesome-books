@@ -7,21 +7,40 @@
   <link rel="stylesheet" href="index.css">
   <title>Awesome</title>
  </head>
-<body>
+<body onload='startDate()'>
 
-      <section class="allBooks">
-        <div class="title"><h2>All awesome books</h2></div>
+        <main>
+          <div id='date'></div>
+        <div class="page" id="List">
+            <ul class="nav">
+              <li class="nav-title">Awesome Books</li>
+                <li class="tags"><a href="#" data-target="List" class="nav-link">List</a></li>
+                <li class="tags"><a href="#" data-target="addNew" class="nav-link">Add new</a></li>
+                <li class="tags"><a href="#" data-target="contact" class="nav-link">Contact</a></li>
+            </ul>
+             
+                  <section class="allBooks">
+        <div class="title"><h1>All awesome books</h1></div>
         <div class="tables">
           <table>
           <tbody class="lists">
           </tbody>
         </table>
         </div>
+        <footer>Copyright....</footer>
       </section>
-      <br><hr>
-      <section class="addNew">
+        </div>
+        
+        <div class="page active" id="addNew">
+            <ul class="nav">
+              <li class="nav-title">Awesome Books</li>
+                <li class="tags"><a href="#" data-target="List" class="nav-link">List</a></li>
+                <li class="tags"><a href="#" data-target="addNew" class="nav-link">Add new</a></li>
+                <li class="tags"><a href="#" data-target="contact" class="nav-link">Contact</a></li>
+            </ul>
+                  <section class="addNew">
         <div class="title">
-          <h2>Add a new book</h2>
+          <h1>Add a new book</h1>
         </div>
          <form id="form">
             <input type="text" id="title" name="title" placeholder="Title" required /><br><br>
@@ -29,7 +48,34 @@
             <br>
             <div id="btn"><button type="submit" class="button">Add</button></div>
           </form>
+          <footer>Copyright....</footer>
     </section>
+
+        </div>
+        
+        <div class="page" id="contact">
+            <ul class="nav">
+              <li class="nav-title">Awesome Books</li>
+                <li class="tags"><a href="#" data-target="List" class="nav-link">List</a></li>
+                <li class="tags"><a href="#" data-target="addNew" class="nav-link">Add new</a></li>
+                <li class="tags"><a href="#" data-target="contact" class="nav-link">Contact</a></li>
+            </ul>
+                <section class="contact">
+        <h1>Contact Information</h1>
+        <p>
+            Do you have any questions or you just want to say "Hello"?<br>
+            You can reach out to us!
+        </p>
+        <ul>
+            <li>Our e-mail: mail@mail.com</li>
+            <li>Our phone number:46746464646</li>
+            <li>Our address:xyz</li>
+        </ul>
+        <footer>Copyright....</footer>
+    </section>
+    
+        </div>
+    </main>
   <script src='index.js'></script>
 </body>
 </html>
