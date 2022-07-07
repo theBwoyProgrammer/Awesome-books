@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(49, 48, 48, 0);
+    background-color: rgba(49, 48, 48, 0);
 }
 
 .allBooks {
@@ -19,8 +19,12 @@ body {
   width: 90%;
 }
 
+.tables {
+    border: 3px solid black;
+}
+
 table tr:nth-child(odd) {
-  background-color: rgba(49, 48, 48, 0.247);
+    background-color: rgba(49, 48, 48, 0.247);
 }
 
 td {
@@ -130,4 +134,44 @@ footer {
   position: absolute;
   right: 4%;
   top: 12%;
+=======
+    text-align: center;
+    padding: 1rem;
+}
+
+.remove-button {
+    padding-left: 10rem;
+}
+
+hr {
+    width: 20%;
+    border: 2px solid black;
+}
+
+.addNew, .allBooks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type='text'] {
+    border: 2px solid black;
+    height: 1.5rem;
+    width: 15rem;
+}
+
+.button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px black, 0.1em 0 0.1em black;
+}
+
+#btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
 }
