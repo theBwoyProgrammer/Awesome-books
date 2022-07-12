@@ -1,3 +1,7 @@
+/* eslint-disable */
+/* stylelint-disable */
+/* hint-disable */
+
 // these aren't really private, but nor are they really useful to document
 
 /**
