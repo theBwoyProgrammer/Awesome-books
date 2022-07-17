@@ -91,10 +91,17 @@ footer {
 }
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   display: none;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 96%;
+  border: 2px solid brown;
   position: absolute;
+  margin-left: 65px;
+  background-color: bisque;
 }
 
 .active {
